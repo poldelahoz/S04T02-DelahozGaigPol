@@ -1,11 +1,13 @@
-package cat.itacademy.barcelonactiva.delahoz.pol.s04.t02.n01.S04T02N01DelahozGaigPol.model.domain;
+package cat.itacademy.barcelonactiva.delahoz.Pol.s04.t02.n02.S04T02N02DelahozGaigPol.domain;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "fruites")
@@ -13,7 +15,6 @@ public class Fruita {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "fruitaId")
 	private long id;
 	
 	@Column(name = "nom")
