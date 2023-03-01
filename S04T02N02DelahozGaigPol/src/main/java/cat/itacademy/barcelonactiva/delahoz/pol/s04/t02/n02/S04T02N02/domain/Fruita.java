@@ -1,4 +1,4 @@
-package cat.itacademy.barcelonactiva.delahoz.pol.s04.t02.n01.S04T02N01DelahozGaigPol.model.domain;
+package cat.itacademy.barcelonactiva.delahoz.pol.s04.t02.n02.S04T02N02.domain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -13,7 +13,6 @@ public class Fruita {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "fruitaId")
 	private long id;
 	
 	@Column(name = "nom")
@@ -57,5 +56,4 @@ public class Fruita {
 	public String toString() {
 		return "Fruita [id=" + id + ", nom=" + nom + ", quantitatQuilos=" + quantitatQuilos + "]";
 	}
-	
 }
